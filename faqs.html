@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handicraft</title>
+</head>
+<body>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: #333;
+    }
+
+    .faq-section {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: wheat;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-section h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .faq {
+        margin-bottom: 15px;
+    }
+
+    .faq-question {
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .faq-question:hover {
+        background-color: #e0e0e0;
+    }
+
+    .faq-answer {
+        margin-top: 5px;
+        padding: 10px;
+        background-color: #f8f8f8;
+        border-left: 4px solid #007bff;
+        display: none;
+        border-radius: 5px;
+    }
+
+    .faq-answer p {
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+<div class="faq-section">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+        <div class="faq-question">What is the delivery time for handicraft products?</div>
+        <div class="faq-answer">
+            <p>Our delivery time typically ranges from 5-10 business days, depending on your location.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-question">Do you offer customization for products?</div>
+        <div class="faq-answer">
+            <p>Yes, we offer customization on select products. Please contact us for more details.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-question">What materials are used in your handicrafts?</div>
+        <div class="faq-answer">
+            <p>We use eco-friendly and sustainable materials such as wood, clay, natural fibers, and recycled materials.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-question">What is your return policy?</div>
+        <div class="faq-answer">
+            <p>We accept returns within 14 days of delivery for unused and undamaged items. Please review our return policy for details.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-question">How can I contact customer support?</div>
+        <div class="faq-answer">
+            <p>You can reach us via email at support@handicraftsite.com or call us at +123 456 7890.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isVisible = answer.style.display === 'block';
+            answer.style.display = isVisible ? 'none' : 'block';
+        });
+    });
+</script>
+</body>
+</html>

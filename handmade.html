@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handmade skills</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      background-color: rgb(252, 232, 194);
+      color: #333;
+    }
+
+    .banner-container img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+    .banner {
+      width: 100%;
+      height: 400px;
+      background-image: url("./pictures/handmade skills.jpeg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      text-align: center;
+    }
+
+    .modal-body {
+      text-align: center;
+    }
+
+    .carousel-inner img {
+      width: 200px;
+      max-height: 30%;
+      object-fit: cover;
+    }
+
+    .modal-content {
+      background-color: wheat;
+      box-sizing: border-box;
+      box-shadow: 0 5 15 px;
+    }
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    .modal-footer {
+      border-top: none;
+      justify-content: center;
+    }
+
+    .price-tag {
+      font-size: 1.5rem;
+      color: green;
+      margin-top: 10px;
+    }
+
+    .shop-now-btn {
+      margin-top: 20px;
+      background-color: rgb(218, 170, 83);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .shop-now-btn:hover {
+      background-color: rgb(218, 159, 51);
+    }
+
+    .about-section {
+      background-color: #9c6300;
+      color: #242323;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .card {
+      border: 30px solid rgb(253, 204, 111);
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .card-img-top {
+      border-radius: 10px;
+      object-fit: contain;
+      height: 300px;
+    }
+
+    .add-to-cart {
+      margin-top: 10px;
+      width: 100%;
+      background-color: rgb(230, 182, 94);
+    }
+
+    .modal-content {
+      background-color: #fff;
+    }
+
+    .carousel-inner img {
+      width: auto;
+      height: 300px;
+
+      object-fit: cover;
+    }
+    footer {
+      background-color: rgb(253, 204, 111);
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    #modal-images img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .carousel-inner {
+      width: 100%;
+      height: auto;
+    }
+
+    .modal-body {
+      overflow-y: auto;
+      /* This ensures the content scrolls if it overflows */
+      max-height: 90vh;
+      /* Adjust the height to fit content */
+    }
+  </style>
+ 
+    
+  <body style="background-color: wheat">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        ><img src="./pictures/logooo-removebg-preview.png" alt="" height="90px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Our categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Cultural</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./sindhi.html">Sindhi</a></li>
+                  <li><a class="dropdown-item" href="./punjabi.html">Punjabi</a></li>
+                  <li><a class="dropdown-item" href="/pashto.html">Pushto</a></li>
+                  <li><a class="dropdown-item" href="./balochi.html">Balochi</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./mud_art.html">Mud art</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="./handmade.html"
+                  >Handmade</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs">FAQ's</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#orderr">Order now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews-section">Reviews</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-primary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <div class="banner-container">
+      <img
+        src="./pictures/handmade skills.jpeg"
+        class="img-fluid"
+        alt="Sindhi Handicraft Banner"
+        height="30%"
+        width="300px"
+      />
+    </div>
+
+    <section
+      class="about-section py-5 mt-3"
+      style="background-color: rgb(253, 204, 111)"
+    >
+      <div class="container">
+        <h2 class="text-center mb-4">Handmade Skills</h2>
+        <p class="text-center">
+          A handicraft is a traditional main sector of craft making and applies to a wide range of creative and design activities that are related to making things with one's hands and skill, including work with textiles, moldable and rigid materials, paper, plant fibers, clay, etc
+          
+Choosing handloom and handicraft products helps preserve traditional arts and supports artisans and weavers. The technologically advanced age, which has put everything at our fingertips and made everything so simple, is also affecting our sense of cultural identity.
+        </p>
+      </div>
+    </section>
+
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/pro6.jpg"
+              class="card-img-top"
+              alt="Handicraft 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Handmade metal lamp</h5>
+              <p class="card-text">
+                A beautiful handcrafted metal lamp.
+              </p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/pro3.jpg"
+              class="card-img-top"
+              alt="Handicraft 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Handmaded mirror</h5>
+              <p class="card-text">
+                A designed mirror for home decor.
+              </p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+                data-bs-images="spulcture.png.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/pro4.jpg"
+              class="card-img-top"
+              alt="Handicraft 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ceramic vase</h5>
+              <p class="card-text">
+                 A unique ceramic decorative piece.
+              </p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+                data-bs-images="clatplate.png.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/pro5.jpg"
+              class="card-img-top"
+              alt="Handicraft 1"
+              height="20%"
+              width="200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mindblowing painting</h5>
+              <p class="card-text">The hand painted moon art is giving realistic vibes.</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal4"
+                data-bs-images="claypot.png.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/pro2.jpg"
+              class="card-img-top"
+              alt="Handicraft 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Textile decorative piece</h5>
+              <p class="card-text">Textile decoration pieces are really different..</p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal5"
+                data-bs-images="clay bowl.png.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6-->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/pro7.jpg"
+              class="card-img-top"
+              alt="Handicraft 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Handmade lockets</h5>
+              <p class="card-text">
+                they looks really attractive and easy to carry.
+              </p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal6"
+                data-bs-images="mudframe.png.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/pro8.jpg"
+              class="card-img-top"
+              alt="Handicraft 1"
+              height="20%"
+              width="200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">precious handmade bangles</h5>
+              <p class="card-text">
+                Wearing bangles are the traditions.
+              </p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal7"
+                data-bs-images="claymug2.png.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8-->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/prod1.jpg"
+              class="card-img-top"
+              alt="Handicraft 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Most elegant paintings</h5>
+              <p class="card-text">
+                A beautifully designed paint art.
+              </p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal8"
+                data-bs-images="clayclock.png.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="col">
+          <div class="card">
+            <img
+              src="./pictures/pro9.jpg"
+              class="card-img-top"
+              alt="Handicraft 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Beautiful Handmade Anklet</h5>
+              <p class="card-text">
+                they give the really precious look.
+              </p>
+              <button
+                class="btn btn-dark add-to-cart"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal9"
+                data-bs-images="mini spulcture.png.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="carouselExample1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./pictures/pro6.jpg"
+                    alt="Handmade metal lamp"
+                    width="300px"
+                    height="300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div id="product-description">
+              
+              <p>Metal Handicrafts are beautiful and intricate works of art that are created using metal as the primary material. These handicrafts have a rich history, with metalworking being one of the earliest forms of art and craft.</p>
+              <div id="product-price" class="price-tag">$26.99</div>
+            </div>
+            <button class="shop-now-btn" onclick="shopNow(1)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="carouselExample2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./pictures/pro3.jpg"
+                    alt="Handmaded mirror"
+                    width="300px"
+                    height="300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div id="product-description">
+              
+              <p>The mirror forms a virtual image of whatever is in the opposite angle from the viewer, meaning that objects in the image appear to exist in a direct line of sight—behind the surface of the mirror—at an equal distance from their position in front of the mirror.</p>
+              <div id="product-price" class="price-tag">$17.99</div>
+            </div>
+            <button class="shop-now-btn" onclick="shopNow(2)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Product Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="carouselExample3"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./pictures/pro4.jpg"
+                    alt="Ceramic vase"
+                    width="300px"
+                    height="300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div id="product-description">
+              
+              <p>Ceramics are non-metallic, inorganic materials that are shaped and fired at high temperatures to create hard, brittle, and heat-resistant materials. The word "ceramic" comes from the Greek word for "pottery"</p>
+              <div id="product-price" class="price-tag">$19.99</div>
+            </div>
+            <button class="shop-now-btn" onclick="shopNow(3)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div
+      class="modal fade"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel4">Product Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="carouselExample4"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./pictures/pro5.jpg"
+                    alt="Product Image"
+                    width="300px"
+                    height="300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample4"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample4"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div id="product-description">
+          
+              <p>
+                The moon was personified as a divinity, and Selene was one of the prominent goddesses associated with the moon. She was often depicted in motion, such as riding a horse or driving a chariot.
+                Despite the various beliefs and superstitions surrounding the
+                full moon, there is no denying its beauty and majesty...
+              </p>
+              <div id="product-price" class="price-tag">$30.99</div>
+            </div>
+            <button class="shop-now-btn" onclick="shopNow(4)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div
+      class="modal fade"
+      id="exampleModal5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel5">Product Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="carouselExample5"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./pictures/pro2.jpg"
+                    alt="Product Image"
+                    width="300px"
+                    height="300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample5"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample5"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div id="product-description">
+              
+              <p>
+                The beauty of textile designs lies in their ability to combine
+                color, pattern, and texture.Textile designers are responsible for the look, feel, and performance of fabrics and trims. They work with a variety of fabrics, such as cotton, wool, and silk, to create products like clothing, upholstery, curtains, and more.
+              </p>
+              <div id="product-price" class="price-tag">$10.99</div>
+            </div>
+            <button class="shop-now-btn" onclick="shopNow(5)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div
+      class="modal fade"
+      id="exampleModal6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel6">Product Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="carouselExample6"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./pictures/pro7.jpg"
+                    alt="Product Image"
+                    width="300px"
+                    height="300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample6"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample6"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div id="product-description">
+             
+              <p>
+                Lockets are small, personal containers that can be worn on a necklace or as a brooch. They are often made of precious metals like gold or silver and can be opened to store a small item, such as a photo, lock of hair, or other sentimental object.
+              </p>
+              <div id="product-price" class="price-tag">$12.99</div>
+            </div>
+            <button class="shop-now-btn" onclick="shopNow(6)">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal 7 -->
+<div
+  class="modal fade"
+  id="exampleModal7"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel7"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel7">Product Details</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div
+          id="carouselExample7"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./pictures/pro8.jpg"
+                alt="Bangles"
+                width="300px"
+                height="300px"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample7"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample7"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div id="product-description">
+         
+          <p>
+            Bangles are circular in shape, and, unlike other bracelets, are not
+            flexible.Bangles are typically ring- or half-ring-shaped, but some can be larger and fit on the upper arm. They can be made from a variety of materials, including metal, wood, glass, plastic, ivory, gold, silver, and stainless steel.
+          </p>
+          <div id="product-price" class="price-tag">$14.99</div>
+        </div>
+        <button class="shop-now-btn" onclick="shopNow(7)">Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 8 -->
+<div
+  class="modal fade"
+  id="exampleModal8"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel8"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel8">Product Details</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div
+          id="carouselExample8"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./pictures/prod1.jpg"
+                alt="Art Pieces"
+                width="300px"
+                height="300px"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample8"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample8"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div id="product-description">
+          
+          <p>
+            Use words such as lustrous, shadowy, radiant, glossy, and saturated when describing colors. The average person will see your artwork in a different light if you describe it using words that connect your artwork to the smell and feeling of everyday objects.
+            Highlights, shadows, and other light elements all play a part in
+            creating texture in art pieces.
+          </p>
+          <div id="product-price" class="price-tag">$24.99</div>
+        </div>
+        <button class="shop-now-btn" onclick="shopNow(8)">Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 9 -->
+<div
+  class="modal fade"
+  id="exampleModal9"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel9"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel9">Product Details</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div 
+          id="carouselExample9"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./pictures/pro9.jpg"
+                alt="Anklets"
+                width="300px"
+                height="300px"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample9"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample9"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div id="product-description">
+        
+          <p>
+            Anklets are decorative items worn around the ankle, also known as ankle bracelets or ankle chains. They can be worn on one or both ankles and come in a variety of styles, materials, and lengths. Anklets can be paired with casual or dressy outfits, and with sandals, heels, or trainers.
+          </p>
+          <div id="product-price" class="price-tag">$7.99</div>
+        </div>
+        <button class="shop-now-btn" onclick="shopNow(9)">Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+      <p>&copy; 2024 Handmade skills. All right reserved.</p>
+    </footer>
+
+    <script>
+      function shopNow(productId) {
+        alert(
+          "yor selected product " +
+            productId +
+            " redirecting to the product page."
+        );
+      }
+
+      const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+      addToCartButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          // Get images, title, description, and price from the data-bs-* attributes
+          const images = this.getAttribute("data-bs-images").split(",");
+          const title = this.getAttribute("data-bs-title");
+          const description = this.getAttribute("data-bs-description");
+          const price = this.getAttribute("data-bs-price");
+
+          // Modal elements
+          const modalImagesContainer = document.getElementById("modal-images");
+          const productDescription = document.getElementById("product-text");
+          const productPrice = document.getElementById("product-price");
+
+          // Clear previous modal content
+          modalImagesContainer.innerHTML = "";
+          productDescription.innerHTML = "";
+          productPrice.innerHTML = "";
+
+          // Add images
+          images.forEach((image, index) => {
+            const activeClass = index === 0 ? "active" : ""; // Set first image as active
+            modalImagesContainer.innerHTML += `
+                    <div class="carousel-item ${activeClass}">
+                        <img src="${image}" class="d-block w-100" alt="Handicraft Image">
+                    </div>
+                `;
+          });
+
+          //  product title, description, and price
+          productDescription.innerHTML = description;
+          productPrice.innerHTML = price;
+        });
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

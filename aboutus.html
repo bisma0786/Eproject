@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Your Handicraft Store</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7ecca;
+            /* Wheat background color */
+            color: #333;
+            /* Dark text for readability */
+        }
+
+        header {
+            background-color: #f2f2f2;
+            /* Light white background */
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: wheat;
+            /* Wheat color for the title */
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .how {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #8c6e4f;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .section-content div {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #8c6e4f;
+            /* Wheat color */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #6d4f30;
+            /* Darker wheat color */
+        }
+
+        .order-method {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .order-method h3 {
+
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 24px;
+            color: #6d4f30;
+        }
+
+        .order-method ol {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .order-method li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    
+            .dropdown-submenu:hover .dropdown-menu {
+                display: block;
+            }
+        
+            .dropdown-submenu .dropdown-menu {
+                display: none;
+                position: absolute;
+                left: 100%;
+                top: 0;
+            }
+        </style>
+        
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./pictures/logooo-removebg-preview.png" alt="" height="90px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Our categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Cultural</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./sindhi.html">Sindhi</a></li>
+                        <li><a class="dropdown-item" href="./punjabi.html">Punjabi</a></li>
+                        <li><a class="dropdown-item" href="./pashto.html">Pushto</a></li>
+                        <li><a class="dropdown-item" href="./balochi.html">Balochi</a></li>
+                      </ul>
+                  
+    
+                  <li><a class="dropdown-item" href="./mud_art.html">Mud art</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="./handmade.html">Handmade</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact us</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#faqs">FAQ's</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#orderr">Order now</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews-section">Reviews</a>
+              </li>
+              </li>
+            </ul>
+    
+    
+    
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    
+      </nav>
+    
+
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <div class="how">
+        <section>
+            <h2 class="section-title">Who We Are</h2>
+            <p class="about-text">
+                At [Handicraft], we believe in the beauty of handcrafted items that tell stories. Our mission is to
+                bring the finest handmade crafts from skilled artisans around the world, right to your doorstep. Whether
+                it's a cozy knitted scarf, an intricately designed ceramic vase, or a delicate piece of jewelry, each
+                item is made with care and passion. We celebrate the artistry and craftsmanship of people who pour their
+                heart into their creations, and we aim to connect you with these beautiful works of art.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Our Values</h2>
+            <div class="section-content">
+                <div>
+                    <h3>Quality Craftsmanship</h3>
+                    <p class="about-text">
+                        We work with artisans who value quality and attention to detail. Each piece is carefully
+                        crafted, ensuring you receive products that are not only beautiful but also durable.
+                    </p>
+                </div>
+                <div>
+                    <h3>Support for Artisans</h3>
+                    <p class="about-text">
+                        By supporting us, you're also supporting the talented artisans behind each product. Our mission
+                        is to provide fair wages and create sustainable opportunities for the communities we work with.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Why Choose Us?</h2>
+            <p class="about-text">
+                We offer a unique selection of handcrafted products that are made with love, attention to detail, and a
+                passion for creativity. We believe in making your space, wardrobe, and life a little brighter with items
+                that have a story to tell.
+            </p>
+            <p class="about-text">
+                Whether you're looking for a gift for a loved one or a special item for your home, [Handicraft] offers
+                something for everyone, each with its own special charm and authenticity.
+            </p>
+            <a href="/shop" class="cta-button">Shop Our Collection</a>
+        </section>
+
+        <!-- Ordering Method Section -->
+        <section class="order-method">
+            <h3>How to Order</h3>
+            <p class="about-text">
+                Ordering from [Handicraft] is easy! Just follow the simple steps below:
+            </p>
+            <ol>
+                <li><strong>Browse Our Collection:</strong> Visit our <a href="/shop" style="color: #8c6e4f;">shop
+                        page</a> to explore our handcrafted products.</li>
+                <li><strong>Add Items to Your Cart:</strong> Select your desired items and add them to your cart by
+                    clicking the "Add to Cart" button.</li>
+                <li><strong>Review Your Cart:</strong> Once you're ready to check out, click on the cart icon at the top
+                    of the page to review your items.</li>
+                <li><strong>Enter Shipping Details:</strong> Provide your shipping address and choose your preferred
+                    shipping method.</li>
+                <li><strong>Make Payment:</strong> Choose from our secure payment options (credit card, PayPal, etc.) to
+                    complete your purchase.</li>
+                <li><strong>Receive Confirmation:</strong> After completing your order, you will receive a confirmation
+                    email with your order details and tracking information.</li>
+            </ol>
+            <p class="about-text">
+                It's that simple! If you have any questions, feel free to <a href="/contact"
+                    style="color: #8c6e4f;">contact us</a> and we'll be happy to assist you.
+            </p>
+        </section>
+    </div>
+    <footer class=" footer bg-light  p-5 text-center">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; ">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+                <div style="flex: 1; min-width: 200px; margin: 10px 0;">
+                    <h3 style="margin-bottom: 10px;">About Us</h3>
+                    <p style="font-size: 14px; line-height: 1.6;">We are dedicated to promoting handcrafted products
+                        made by
+                        talented artisans. Explore our unique collection and support sustainable craftsmanship.</p>
+                </div>
+
+                <div style="flex: 1; min-width: 200px; margin: 10px 0;">
+                    <h3 style="margin-bottom: 10px;">Quick Links</h3>
+                    <ul style="list-style: none; padding: 0; font-size: 14px;">
+                        <li><a href="/" style="color: black; text-decoration: none;">Home</a></li>
+                        <li><a href="/about" style="color: black; text-decoration: none;">About</a></li>
+                        <li><a href="/shop" style="color: black; text-decoration: none;">Shop</a></li>
+                        <li><a href="/contact" style="color: black; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div style="flex: 1; min-width: 200px; margin: 10px 0;">
+                    <h3 style="margin-bottom: 10px;">Contact Us</h3>
+                    <p style="font-size: 14px; line-height: 1.6;">Email: <a href="mailto:support@handicraftsite.com"
+                            style="color: black; text-decoration: none;">support@handicraftsite.com</a></p>
+                    <p style="font-size: 14px;">Phone: +123 456 7890</p>
+                    <p style="font-size: 14px;">Address: 123 Craft Lane, Artisan City</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px; border-top: 1px solid #555; padding-top: 10px; font-size: 14px;">
+                <p>&copy; 2024 Handicraft Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap.js"></script>
+</body>
+
+</html>
